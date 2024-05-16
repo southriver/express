@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello page 
+
+    <% if (user) { %>
+        <p>Welcome, <%= user.username %>! You are logged in.</p>
+        <a href="/profile">Go to your profile</a> | <a href="/logout">Logout</a>
+    <% } else { %>
+        <p>You are not logged in.</p>
+        <a href="/login">Login</a> | <a href="/register">Register</a>
+    <% } %>    
+</body>
+</html>
